@@ -19,6 +19,30 @@ body {
   position: relative;
 }
 
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  gap: 60px;
+}
+
+.start-button {
+  background-color: transparent;
+  color: white;
+  font-size: 2rem;
+  border: 4px solid white;
+  transition: all 0.3s ease;
+  padding: 20px 60px;
+}
+
+.start-button:hover {
+  cursor: url(./assets/cursorRed.png), auto;
+  background-color: white;
+  color: #0e1320;
+}
+
 .target {
   position: absolute;
   z-index: 10;
