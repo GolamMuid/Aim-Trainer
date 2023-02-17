@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
 import zombie1 from "../../assets/1.png";
-// import zombie2 from "../../assets/2.png";
 import zombie2 from "../../assets/3.png";
 import zombie3 from "../../assets/4.png";
 import zombie4 from "../../assets/5.png";
 
-function Target({ score, setScore }) {
+function TargetRegAim({ score, setScore }) {
   const zombieArray = [zombie1, zombie2, zombie3, zombie4];
   let zombie = 0;
   const [xCoord, setxCoord] = useState(1);
@@ -36,9 +35,7 @@ function Target({ score, setScore }) {
     height: "100px",
     width: "100px",
     border: "none",
-    // backgroundColor: "transparent",
     backgroundImage: zombie1,
-    // cursor: "url(./assets/cursorRed.png), auto",
   };
 
   return (
@@ -48,4 +45,4 @@ function Target({ score, setScore }) {
   );
 }
 
-export default Target;
+export default TargetRegAim;

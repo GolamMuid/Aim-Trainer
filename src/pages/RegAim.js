@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import "../App.css";
-
 import gunFire from "../assets/9mm.mp3";
 import ScoreCard from "../components/ScoreCard/ScoreCard";
-import Target from "../components/Target/Target";
+import TargetRegAim from "../components/Target/TargetRegAim";
 
-function Aim() {
+function RegAim() {
   const [score, setScore] = useState(0);
   const fire = () => {
     new Audio(gunFire).play();
@@ -14,9 +13,9 @@ function Aim() {
   return (
     <div className="container" onClick={fire}>
       <ScoreCard score={score} />
-      <Target score={score} setScore={setScore} />
+      <TargetRegAim score={score} setScore={setScore} />
     </div>
   );
 }
 
-export default Aim;
+export default RegAim;

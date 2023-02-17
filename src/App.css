@@ -4,7 +4,7 @@
 }
 
 body {
-  cursor: url(./assets/cursorWhite.png), auto;
+  /* cursor: url(./assets/cursorWhite.png), auto; */
 }
 
 .button:hover {
@@ -17,6 +17,20 @@ body {
   background-color: #0e1320;
   /* color: white; */
   position: relative;
+  cursor: url(./assets/cursorWhite.png), auto;
+}
+
+.container-2 {
+  height: 100vh;
+  width: 100vw;
+  background-color: #0e1320;
+  /* color: white; */
+  position: relative;
+  cursor: url(./assets/cursorDisabled.png), auto;
+}
+
+.aim {
+  cursor: url(./assets/cursorWhite.png), auto;
 }
 
 .home-container {

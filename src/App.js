@@ -1,16 +1,19 @@
 import { useState } from "react";
 import Home from "./components/Home/Home";
-import Aim from "./pages/Aim";
+import PreAim from "./pages/PreAim";
+import RegAim from "./pages/RegAim";
 
 function App() {
-  const [screen, setScreen] = useState(false);
+  const [screen, setScreen] = useState(0);
 
-  const start = () => setScreen(true);
+  const regAim = () => setScreen(1);
+  const preAim = () => setScreen(2);
 
   return (
     <div>
-      {!screen && <Home start={start} />}
-      {screen && <Aim />}
+      {screen === 0 && <Home regAim={regAim} preAim={preAim} />}
+      {screen === 1 && <RegAim />}
+      {screen === 2 && <PreAim />}
     </div>
   );
 }
