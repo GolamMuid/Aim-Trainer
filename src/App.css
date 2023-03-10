@@ -51,6 +51,11 @@ body {
   padding: 20px 60px;
 }
 
+.start-button-helper-text {
+  font-size: 0.825rem;
+  padding: 10px;
+}
+
 .start-button:hover {
   cursor: url(./assets/cursorRed.png), auto;
   background-color: white;
