@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import zombie1 from "../../assets/1.png";
 import zombie2 from "../../assets/3.png";
 import zombie3 from "../../assets/4.png";
-import zombie4 from "../../assets/5.png";
+import zombie4 from "../../assets/2.png";
 
 function TargetRegAim({ score, setScore }) {
   const zombieArray = [zombie1, zombie2, zombie3, zombie4];
@@ -32,8 +32,8 @@ function TargetRegAim({ score, setScore }) {
     position: "absolute",
     top: yCoord,
     left: xCoord,
-    height: "100px",
-    width: "100px",
+    height: "fit-content",
+    width: "fit-content",
     border: "none",
     backgroundImage: zombie1,
   };
