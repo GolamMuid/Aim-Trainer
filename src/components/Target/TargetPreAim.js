@@ -7,8 +7,8 @@ import zombie4 from "../../assets/2.png";
 function TargetPreAim({ score, setScore }) {
   const zombieArray = [zombie1, zombie2, zombie3, zombie4];
   let zombie = 0;
-  const [xCoord, setxCoord] = useState(1);
-  const [yCoord, setyCoord] = useState(1);
+  const [xCoord, setxCoord] = useState(300);
+  const [yCoord, setyCoord] = useState(300);
   const [zombieFace, setZombieFace] = useState(zombieArray[zombie]);
   const [timerId, setTimerId] = useState(null);
 
