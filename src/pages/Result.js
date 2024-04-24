@@ -4,10 +4,10 @@ function Result({ score }) {
   return (
     <div className="result-container">
       <div> Your Score is {score} </div>
-      <div> Average kill per second : {(score / 60).toFixed(2)} </div>
+      <div> Average kill per second : {(score / 15).toFixed(2)} </div>
       <div>
         Your aim is
-        {score > 50 ? (
+        {score > 7 ? (
           <span style={{ color: "green" }}> Good </span>
         ) : (
           <span style={{ color: "red" }}> Not Good Enough </span>
