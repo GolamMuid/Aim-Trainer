@@ -12,7 +12,7 @@ function RegAim() {
     new Audio(gunFire).play();
   };
 
-  const [countdown, setCountdown] = useState(60);
+  const [countdown, setCountdown] = useState(15);
   const [gameOver, setGameOver] = useState(false);
 
   useEffect(() => {
